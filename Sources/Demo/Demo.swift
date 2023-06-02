@@ -5,6 +5,7 @@
 //  Created by Danny Gilbert on 6/1/23.
 //
 
+import Foundation
 import ConsoleUI
 import TSCBasic
 
@@ -25,5 +26,16 @@ struct Demo {
     console.print("You entered \(username)", inColor: .yellow)
     let password = console.prompt("Password", isSecure: true)
     console.print("You entered \(password)", inColor: .yellow)
+    
+    let spinnable = createProgressSpinner(
+      forStream: stdoutStream,
+      started: "Task In Progress...",
+      finished: "✅ Completed Task",
+      spinner: Spinner(kind: .matrix)
+    )
+    spinnable.start()
+    let seconds = useconds_t(Double(3) * pow(1000, 2))
+    usleep(seconds)
+    spinnable.stop()
   }
 }

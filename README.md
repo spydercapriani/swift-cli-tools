@@ -4,7 +4,7 @@ Console Command Line Interface Helpers
 
 ## ConsoleUI
 
-Contains helper extensions for [TerminalController](https://github.com/apple/swift-tools-support-core/blob/main/Sources/TSCBasic/TerminalController.swift) to aid in common command line ui tasks.
+Contains helpers for aiding in common command line ui tasks.
 
 ```swift
 console.action("Action Title")

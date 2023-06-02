@@ -12,7 +12,6 @@ import TSCBasic
 struct Demo {
   
   static func main() throws {
-    let console = TerminalController(stream: stdoutStream)!
     console.action("Action Title")
     console.bot("Hello there!")
     console.step("Step Example")

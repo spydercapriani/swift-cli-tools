@@ -2,6 +2,19 @@
 
 Console Command Line Interface Helpers
 
+## Getting Started
+
+### Swift Package Manager
+Package Dependency:
+```
+.package(url: "https://github.com/spydercapriani/swift-cli-tools.git", from: "1.0.0"),
+```
+
+Target Dependency:
+```
+.product(name: "CLITools", package: "swift-cli-tools"),
+```
+
 ## ConsoleUI
 
 Contains helpers for aiding in common command line ui tasks.
